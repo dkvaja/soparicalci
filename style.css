@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   margin: 2rem auto;
   align-items: center;
+  padding-top: 1rem;
 }
 
 .container h1 {
@@ -96,11 +97,16 @@ label {
   font-weight: bold;
   font-size: 1.4rem;
 }
-#gram {
+#gram,
+#kilo {
   font-weight: bold;
 }
 
 .copy {
   font-size: 0.7rem;
   font-weight: bold;
+}
+
+input {
+  margin-left: 1rem;
 }

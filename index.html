@@ -10,30 +10,31 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="live.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <title>સોપારીનુ કેલ્ક્યુલેટર - dk_vaja</title>
   </head>
   <body>
     <div class="container">
-      <h1>સોપારીનુ કેલ્ક્યુલેટર વિજય માવદીયા માટે</h1>
+      <h4>શ્રી ગણેશાય નમ:</h4>
+      <h1>સોપારીનુ કેલ્ક્યુલેટર</h1>
       <form action="#">
-          <div class="form-row">
-              <label for="priceofsopari">સોપારીનો ભાવ : </label>
-              <input type="number" id="priceofsopari" min="0" required>
-          </div>
-          <div class="form-row">
-              <label for="pricebycustomer">કેટલા રુપિયાની જોયે : </label>
-              <input type="number" id="pricebycustomer" min="0" required>
-          </div>
-          <button class="btn" onclick="getvalue()">
-              ભાવ જુઓ
-          </button>
+        <div class="form-row">
+          <label for="priceofsopari">સોપારીનો ભાવ : </label>
+          <input type="number" id="priceofsopari" min="0" required />
+        </div>
+        <div class="form-row">
+          <label for="pricebycustomer">કેટલા રુપિયાની જોયે : </label>
+          <input type="number" id="pricebycustomer" min="0" required />
+        </div>
+        <button class="btn" type="submit" onclick="getvalue(event)">
+          ભાવ જુઓ
+        </button>
       </form>
       <div class="result">
-        સોપારીનો જથ્થો: <span id="gram">0</span> ગ્રામ
+        સોપારીનો જથ્થો: <span id="kilo">0</span> કિલો
+        <span id="gram">0</span> ગ્રામ
       </div>
-      <div class="copy">
-        Developed By : dk_vaja &copy; 2021-22
-      </div>
+      <div class="copy">Developed By : dk_vaja &copy; 2021-22</div>
     </div>
   </body>
 </html>
