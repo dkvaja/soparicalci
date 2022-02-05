@@ -10,12 +10,11 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="live.js"></script>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>સોપારીનુ કેલ્ક્યુલેટર - dk_vaja</title>
   </head>
   <body>
     <div class="container">
-      <h4>શ્રી ગણેશાય નમ:</h4>
       <h1>સોપારીનુ કેલ્ક્યુલેટર</h1>
       <form action="#">
         <div class="form-row">
@@ -34,6 +33,35 @@
         સોપારીનો જથ્થો: <span id="kilo">0</span> કિલો
         <span id="gram">0</span> ગ્રામ
       </div>
+      <form action="#">
+        <div class="form-row">
+          <label for="priceofsopari">સોપારીનો ભાવ : </label>
+          <input type="number" id="priceofsoparisecond" min="0" required />
+        </div>
+        <label for="pricebycustomer">કેટલી જોયે: </label>
+        <div class="form-row">
+          <label for="kbycustomer">કિલો:</label>
+          <input
+            type="number"
+            id="kbycustomer"
+            min="0"
+            required
+            class="small-input"
+          />
+          <label for="gbycustomer">&nbsp;ગ્રામ:</label>
+          <input
+            type="number"
+            id="gbycustomer"
+            min="0"
+            required
+            class="small-input"
+          />
+        </div>
+        <button class="btn" type="submit" onclick="getvalue(event)">
+          ભાવ જુઓ
+        </button>
+      </form>
+      <div class="result">કુલ રુપિયા: <span id="finalPrice">0</span></div>
       <div class="copy">Developed By : dk_vaja &copy; 2021-22</div>
     </div>
   </body>
